@@ -52,27 +52,27 @@ This API service manages an inventory of cuboid boxes in a store. It supports CR
 ## Features
 
 ### 1. Add Box
-- **Endpoint**: `POST /boxes/`
+- **Endpoint**: `api/boxes/`
 - **Permissions**: Staff user
 - **Data**: Length, breadth, height
 
 ### 2. Update Box
-- **Endpoint**: `PUT /boxes/<id>/` or `PATCH /boxes/<id>/`
+- **Endpoint**: `api/boxes/<id>/`
 - **Permissions**: Staff user
 - **Data**: Length, breadth, height
 
 ### 3. List All Boxes
-- **Endpoint**: `GET /boxes/`
+- **Endpoint**: `api/boxes/`
 - **Permissions**: Any user
 - **Filters**: Length, breadth, height, area, volume, created by, created before/after
 
 ### 4. List My Boxes
-- **Endpoint**: `GET /boxes/?created_by=<username>`
+- **Endpoint**: `api/boxes/?created_by=<username>`
 - **Permissions**: Staff user
 - **Filters**: Length, breadth, height, area, volume
 
 ### 5. Delete Box
-- **Endpoint**: `DELETE /boxes/<id>/`
+- **Endpoint**: `api/boxes/<id>/`
 - **Permissions**: Box creator
 
 ### Constraints
